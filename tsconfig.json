@@ -1,6 +1,6 @@
 {
-  "compilerOptions": {
-    "target": "es5",
+  /*"compilerOptions": {
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,8 +19,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
+  },*/
+
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
